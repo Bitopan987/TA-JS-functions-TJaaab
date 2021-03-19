@@ -56,9 +56,11 @@ addTwoNumbers();
 */
 function getTable() {
   let num = +prompt(`Enter a number`);
-  console.log(9 * num);
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${number} * ${i} = ${number * i}`);
+  }
 }
-getTable();
+
 /*
 5. Create a function named `isLeapYear` with the following steps:
 
@@ -83,10 +85,9 @@ isLeapYear();
 */
 function getFactorial() {
   let number = +prompt(`Enter a number`);
-  if (number === 0 || number === 1) alert(1);
-  for (var i = number - 1; i >= 1; i--) {
-    number *= i;
+  let final = 1;
+  for (let i = number; i >= 1; i--) {
+    final *= number;
   }
-  alert(number);
+  alert(`The factorial of ${number} is ${factorial}`);
 }
-getFactorial();
